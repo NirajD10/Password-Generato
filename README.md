@@ -1,6 +1,8 @@
 # Password-Generato
 A customized input user and generate random password.
 
+<h3 align ="center"><a href="https://nirajd10.github.io/Password-Generato/">View Here 🔗</a></h3>
+
 ## Description
 
 Password-Generato is password generator from User customized input. <br>
