@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: linear-gradient(to right top, #03001c, #0c0a29, #101237, #181646, #211a54, #281e5b, #2e2261, #352668, #392c68, #3c3168, #403768, #443c68);
+    object-fit: contain;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.container{
+    width: 25%;
+    padding: 1em;
+    margin: 6% auto;
+    min-width: 340px;
+    background: #01062A; /* Alternative color - #18122B */
+    border-radius: 15px;
+    box-shadow:
+        0.3px 0.5px 2.7px rgba(0, 0, 0, 0.028),
+        0.7px 1.1px 6.3px rgba(0, 0, 0, 0.043),
+        1.4px 2.1px 11.6px rgba(0, 0, 0, 0.057),
+        2.5px 3.8px 20.5px rgba(0, 0, 0, 0.072),
+        4.6px 7.1px 38px rgba(0, 0, 0, 0.091),
+        11px 17px 115px rgba(0, 0, 0, 0.13);
+}
+
+.info-text{
+    color: #4E5B84;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+}
+
+.info-text.inline, .input-length, .password{
+    display: inline-block;
+    margin-right :.3em;
+}
+
+.generation-pass, .settings-options, .slider{
+    background-color: #02103F;
+    border-radius: 6px;
+}
+
+/* Password section */
+.generation-pass{
+    position: relative;
+    height: 60px;
+    width: 100%;
+}
+
+.password{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 87%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    padding: .7em;
+    font-size: 1.3rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    outline: 0;
+}
+
+.copy-btn{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    width: 60px;
+    cursor: pointer;
+    background: #0E7BF6;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.copy-btn:hover{
+    background: #0c64c8;
+}
+
+/* Slider Input */ 
+
+.slider{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider input{
+    width: 85%;
+    border-width: .2em;
+}
+
+@media(min-width: 340px){
+    .slider input{
+        width: 80%;
+    }
+}
+
+.slider span{
+    margin: 0 .2em;
+}
+
+/* Settings text */
+
+.settings-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 0;
+    padding: 0 1em;
+}
+
+/* Switch */
+.switch{
+    display: inline-block;
+}
+
+.switch input{
+    display: none;
+}
+
+.switch label{
+    display: block;
+    width: 60px;
+    height: 30px;
+    padding: 3px;
+    border: 2px solid #7e8382;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.switch label::after {
+    content: "";
+    display: inherit;
+    width: 20px;
+    height: 20px;
+    background: #7e8382;
+    transition: 0.3s;
+  }
+
+  .switch input:checked ~ label {
+    border-color: #0E7BF6;
+  }
+
+  .switch input:checked ~ label::after {
+    translate: 30px 0;
+    background: #0E7BF6;
+  }
+
+  /* Button */
+  .btn{
+    width: 100%;
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    background: #0E7BF6;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 1em;
+    cursor: pointer;
+  }
+  

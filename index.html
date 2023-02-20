@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="password-div">
+            <p class="info-text">Generated Password</p>
+            
+            <div class="generation-pass">
+                <input type="text" id="generate-pass" class="password" value="password">
+                <button id="copy" class="copy-btn">
+                    <svg width="30" height="30" class="message-icon" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1Zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2ZM8 21h11V7H8v14Z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="length">
+            <p class="info-text inline">Length:</p><p id="input-length" class="input-length">12</p>
+
+            <div class="slider">
+                <span class="val-length">6</span>
+                <input type="range" id="pass-length" name="pass-length" min="6" max="32" value="12">
+                <span class="val-length">32</span>
+            </div>
+
+        </div>
+
+        <div class="settings">
+            <p class="info-text">Settings</p>
+
+            <div class="settings-options">
+                <p class="settings-text">Include numbers</p>
+
+                <span class="switch">
+                    <input type="checkbox" id="switch-numbers" />
+                    <label for="switch-numbers"></label>
+                </span>
+            </div>
+
+            <div class="settings-options">
+                <p class="settings-text">Include uppercase</p>
+
+                <span class="switch">
+                    <input type="checkbox" id="switch-uppercase" />
+                    <label for="switch-uppercase"></label>
+                </span>
+            </div>
+
+            <div class="settings-options">
+                <p class="settings-text">Include symbols</p>
+
+                <span class="switch">
+                    <input type="checkbox" id="switch-symbols" />
+                    <label for="switch-symbols"></label>
+                </span>
+            </div>
+        </div>
+
+        <button id="generate-btn" class="btn">GENERATE PASSWORD</button>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
